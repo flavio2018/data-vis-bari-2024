@@ -42,9 +42,9 @@ def plot_hexmap_party(df, party_name):
 
 # px.set_mapbox_access_token(open("../.mapbox_token").read())
 
-df_sedi_seggio = pd.read_csv('../data/sedi_seggio.csv')
-df_sedi_seggio_geocoded = pd.read_csv('../data/sedi_seggio_geocoded.csv')
-df_voti_liste_comunali_sezioni = pd.read_csv('../data/voti_liste_coalizioni_sezioni_perc.csv')
+df_sedi_seggio = pd.read_csv('./data/sedi_seggio.csv')
+df_sedi_seggio_geocoded = pd.read_csv('./data/sedi_seggio_geocoded.csv')
+df_voti_liste_comunali_sezioni = pd.read_csv('./data/voti_liste_coalizioni_sezioni_perc.csv')
 
 sezioni_to_plesso = get_sezioni_to_plesso(df_sedi_seggio)
 df_voti_liste_comunali_sezioni = add_plesso_to_df(df_voti_liste_comunali_sezioni, sezioni_to_plesso)
