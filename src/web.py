@@ -40,7 +40,7 @@ def plot_hexmap_party(df, party_name):
 	st.plotly_chart(fig, theme=None)
 
 
-px.set_mapbox_access_token(open("../.mapbox_token").read())
+# px.set_mapbox_access_token(open("../.mapbox_token").read())
 
 df_sedi_seggio = pd.read_csv('../data/sedi_seggio.csv')
 df_sedi_seggio_geocoded = pd.read_csv('../data/sedi_seggio_geocoded.csv')
