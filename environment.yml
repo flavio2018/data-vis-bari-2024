@@ -1,0 +1,18 @@
+name: data-vis-ele-bari
+channels:
+        - conda-forge
+        - defaults
+dependencies:
+        - pandas
+        - matplotlib
+        - seaborn
+        - geopandas
+        - ipython
+        - notebook
+        - jupyter
+        - googlemaps
+        - plotly
+        - beautifulsoup4
+        - lxml
+        - streamlit
+
