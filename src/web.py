@@ -29,13 +29,16 @@ def plot_hexmap_party(df, party_name):
 	    lat="lat", lon="lng",
 	    nx_hexagon=40, opacity=0.7, 
 	    color=party_name,
-	    zoom=10.7,
+	    zoom=10.55,
+	    center={'lat': 41.1035287, 'lon': 16.8427308},
 	    #range_color=[0,0.6],
 	    #labels={"color": "Point Count"},
 	    width=700,
 	)
 	fig.update_layout(mapbox_style="carto-positron")
 	fig.update_layout(margin=dict(b=0, t=0, l=0, r=0))
+	fig.update_layout(coloraxis_colorbar_orientation='h')
+	fig.update_layout(coloraxis_colorbar_y=-0.2)
 
 	st.plotly_chart(fig, theme=None)
 
