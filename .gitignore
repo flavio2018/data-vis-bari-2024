@@ -1,2 +1,10 @@
 *.ipynb
+.mapbox_token
+*.html
 environment.yml
+sedi_seggio.txt
+basi_territoriali_istat/
+confini_amministrativi_istat_01012024/
+geocodes_sedi_seggio/
+PPTR_sistema_tutele_qgis_20220322/
+
