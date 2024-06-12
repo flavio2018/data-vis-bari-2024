@@ -96,7 +96,7 @@ with tab2:
 	st.title("Elezioni comunali Bari 2024")
 	st.header("Quanto è simile l'elettorato delle diverse liste?")
 	st.write("Ogni punto nel grafico è un seggio e i valori sugli assi sono le percentuali di voti prese da ciascuna lista in quel seggio. "
-			 "Il grafico rappresenta la correlazione tra le percentuali di voti prese da due liste su tutti i seggi della città. "
+			 "Il grafico mette a confronto le percentuali di voti prese da due liste su tutti i seggi della città. "
 			 "Prova a confrontare, ad esempio, le liste *Laforgia Sindaco* e *Decaro per Bari*.")
 
 	party_1 = st.selectbox(
