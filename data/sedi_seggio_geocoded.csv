@@ -11,40 +11,40 @@ numero_plesso,formatted_address,lat,lng
 10,"70126 Torre a Mare, Metropolitan City of Bari, Italy",41.0852288,16.9989523
 11,"70126 Torre a Mare, Metropolitan City of Bari, Italy",41.0852288,16.9989523
 12,"Piazza Carlo Poerio, Bari BA, Italy",41.1173936,16.8887681
-13,"Piazza Antonio Gramsci, 20092 Cinisello Balsamo MI, Italy",45.5562675,9.214046399999999
+13,"Piazza Antonio Gramsci, 1, 70126 Bari BA, Italy",41.1181442,16.8892725
 14,"Piazza Francesco Carabellese, 70121 Bari BA, Italy",41.1207051,16.87869
-15,Italy,41.87194,12.56738
-16,"Piazza Armando Diaz, 67037 Pietransieri AQ, Italy",41.8465418,14.1195965
-17,"22070 Via Manzoni CO, Italy",45.6828525,8.979176800000001
+15,"Via Matteo Renato Imbriani, 86, 70121 Bari BA, Italy",41.1225433,16.8768163
+16,"Piazza Armando Diaz, 10, 70121 Bari BA, Italy",41.1226881,16.8770402
+17,"Via Alessandro Manzoni, 228, 70123 Bari BA, Italy",41.118703,16.861582
 18,"Via Alessandro Manzoni, 226, 70123 Bari BA, Italy",41.1188631,16.8615896
 19,"Corso Vittorio Veneto, 10, 70123 Bari BA, Italy",41.1279802,16.8599191
 20,"Via Giosuè Carducci, 10, 70122 Bari BA, Italy",41.1268742,16.8637026
 21,"Via Giovanni Bovio, 43, 70123 Bari BA, Italy",41.1228378,16.8577835
-22,"Via Ettore Fieramosca, 70033 Corato BA, Italy",41.1567352,16.4083038
+22,"Via Ettore Fieramosca, 110, 70123 Bari BA, Italy",41.1230187,16.8573278
 23,"Via Scipione Crisanzio, 185, 70123 Bari BA, Italy",41.1193335,16.8591919
 24,"70020 Toritto, Metropolitan City of Bari, Italy",40.99692719999999,16.6791658
-25,Italy,41.87194,12.56738
+25,"Via Niccolò Pizzoli, 58, 70123 Bari BA, Italy",41.1279545,16.8604421
 26,"Via Brigata Regina, 27, 70123 Bari BA, Italy",41.1239388,16.8522285
 27,"Corso Giuseppe Mazzini, 70123 Bari BA, Italy",41.1253067,16.8557848
 28,"Bari, Metropolitan City of Bari, Italy",41.1171432,16.8718715
 29,"Via Nazariantz Hrand, 70123 Bari BA, Italy",41.1228384,16.8478013
 30,"Via Francesco Babudri, 70123 Bari BA, Italy",41.119375,16.8515633
 31,"Largo S. Sabino, 70122 Bari BA, Italy",41.1280591,16.8693857
-32,"Largo Urbano II, 85010 Banzi PZ, Italy",40.8620791,16.014123
+32,"Largo Papa Urbano II, 1, 70122 Bari BA, Italy",41.1306553,16.8702538
 33,"Corso Cavour, Bari BA, Italy",41.1208409,16.872566
 34,"Via Melo da Bari, Bari BA, Italy",41.1221407,16.8714863
 35,"Via Giuseppe Suppa, 70122 Bari BA, Italy",41.119363,16.8675148
-36,"C.so Vito Fornari, 70056 Molfetta BA, Italy",41.1993737,16.5917552
-37,"Via Giosuè Carducci, 00187 Roma RM, Italy",41.9062409,12.494114
+36,"Via Vito Fornari, 6, 70122 Bari BA, Italy",41.1192201,16.8664483
+37,"Via Giosuè Carducci, 23, 70122 Bari BA, Italy",41.1272927,16.8639868
 38,"Via Aurelio Carrante, 70124 Bari BA, Italy",41.0955931,16.8657044
-39,"Via Giuseppe Bartolo, 96018 Pachino SR, Italy",36.7122883,15.083999
-40,"Via Giacomo Tauro, 70013 Castellana Grotte BA, Italy",40.8840991,17.1697122
-41,Italy,41.87194,12.56738
+39,"Viale Giuseppe Bartolo, 4, 70124 Bari BA, Italy",41.0949506,16.8578533
+40,"Via Giacomo Tauro, 2, 70124 Bari BA, Italy",41.10001,16.86136
+41,"Via Martin L. King, 38, 70124 Bari BA, Italy",41.0997187,16.8623705
 42,"Via Niceforo, 26, 70124 Bari BA, Italy",41.1037502,16.8618696
-43,"Piazzale Giulio Cesare, 20145 Milano MI, Italy",45.47443750000001,9.1557403
+43,"Piazza Giulio Cesare, 13, 70124 Bari BA, Italy",41.1118724,16.8630036
 44,"Via Samuel Friedrich Hahnemann, Bari BA, Italy",41.0978865,16.886681
 45,"Via Nicola de Gemmis, 70124 Bari BA, Italy",41.112179,16.866013
-46,"Via San Tommaso d'Aquino, 00136 Roma RM, Italy",41.9122939,12.4489262
+46,"Via S. Tommaso D'Aquino, 4, 70124 Bari BA, Italy",41.0972953,16.8576883
 47,"Via Daniele Petrera, 70124 Bari BA, Italy",41.1096656,16.8634637
 48,"Via Domenico Mandragora, 70124 Bari BA, Italy",41.1136718,16.8651214
 49,"Viale Antonio Salandra, 70124 Bari BA, Italy",41.1147576,16.8640602
@@ -54,37 +54,37 @@ numero_plesso,formatted_address,lat,lng
 53,"Via Timavo, 25, 70124 Bari BA, Italy",41.1097045,16.8658036
 54,"Via Giovanni Modugno, 70124 Bari BA, Italy",41.1046996,16.8646082
 55,"Via Niceforo, 70124 Bari BA, Italy",41.1034989,16.8617437
-56,Italy,41.87194,12.56738
-57,"Via Colella Giovanni, 70020 Bitetto BA, Italy",41.0380229,16.7522941
-58,"Via Vassallo Ernesto, 93100 Caltanissetta CL, Italy",37.4791988,14.0570646
+56,"Corso A. de Gasperi, 70125 Bari BA, Italy",41.0798074,16.8730148
+57,"Via Giovanni Colella, 1, 70126 Bari BA, Italy",41.1031604,16.8683718
+58,"Traversa Vassallo, 16, 70125 Bari BA, Italy",41.0914728,16.8785707
 59,"Via Monte S. Michele, 70128 Bari BA, Italy",41.149855,16.7660504
 60,"Viale Papa Giovanni XXIII, 70124 Bari BA, Italy",41.1071237,16.8661243
 61,"Viale Papa Giovanni XXIII, 70124 Bari BA, Italy",41.1071237,16.8661243
 62,"Via Generale Nicola Bellomo, 70124 Bari BA, Italy",41.1042555,16.8499135
 63,"Via Nicola Straziota, 70125 Bari BA, Italy",41.1005165,16.879326
 64,"Corso Benedetto Croce, 130, 70125 Bari BA, Italy",41.1099703,16.8723457
-65,"Corso Benedetto Croce, 10135 Torino TO, Italy",45.0209549,7.6451419
-66,"Via Piero Gobetti, 40129 Bologna BO, Italy",44.5192505,11.3366023
+65,"Corso Benedetto Croce, 96, 70125 Bari BA, Italy",41.1113192,16.8722324
+66,"Via Pietro Gobetti, 1, 70125 Bari BA, Italy",41.1116799,16.8759007
 67,"Via Giuseppe Zanardelli, 16, 70125 Bari BA, Italy",41.1117582,16.8753326
-68,"Via Celso Ulpiani, 00156 Roma RM, Italy",41.9303689,12.5685656
+68,"Via Celso Ulpiani, 1, 70126 Bari BA, Italy",41.1100133,16.8771642
 69,"Via Giuseppe Re David, 186, 70125 Bari BA, Italy",41.110803,16.876935
 70,"Mungivacca, 70126 Bari BA, Italy",41.0902002,16.8999589
 71,"Via Raffaele Bovio, Bari BA, Italy",41.0969306,16.8851445
 72,"Viale Luigi Einaudi, 66, 70125 Bari BA, Italy",41.1031116,16.8852322
 73,"Via Adolfo Omodeo, 27, 70125 Bari BA, Italy",41.1050644,16.880775
-74,Italy,41.87194,12.56738
+74,"Via Domenico Cirillo, 70126 Bari BA, Italy",41.1140025,16.8786607
 75,"70026 Capo Scardicchio, Metropolitan City of Bari, Italy",41.11721360000001,16.7818899
-76,Italy,41.87194,12.56738
-77,Italy,41.87194,12.56738
-78,"Viale Lazio, Palermo PA, Italy",38.141944,13.3373928
-79,"Piazza Giuseppe Romita, 14036 Moncalvo AT, Italy",45.049755,8.2663564
-80,"25037 Via Molise, Province of Brescia, Italy",45.5591777,9.8616029
+76,"Via Don Carlo Gnocchi, 18, 70132 Bari BA, Italy",41.1296761,16.7832492
+77,"Via Don Carlo Gnocchi, 18, 70132 Bari BA, Italy",41.1296761,16.7832492
+78,"Viale Lazio, 8, 70132 Bari BA, Italy",41.1195234,16.7927198
+79,"Piazza Giuseppe Romita, 6, 70132 Bari BA, Italy",41.1197269,16.7967768
+80,"Via Molise, 4, 70132 Bari BA, Italy",41.1217022,16.7954688
 81,"Viale delle Regioni, 62, 70132 Bari BA, Italy",41.1213351,16.7877273
 82,"Via Brindisi, 70132 Bari BA, Italy",41.1214898,16.7992775
 83,"Via Nicola Cacudi, 70132 Bari BA, Italy",41.1276684,16.7911914
 84,"Via Salvatore Tramonte, 70132 Bari BA, Italy",41.128859,16.7995977
-85,Italy,41.87194,12.56738
-86,"Via Cassala, 42124 Reggio Emilia RE, Italy",44.703579,10.648089
+85,"Via Lombardia, Bari BA, Italy",41.1178847,16.7904369
+86,"Via Cassala, 15, 70132 Bari BA, Italy",41.118101,16.8385744
 87,"Str. S. Girolamo, 70132 Bari BA, Italy",41.1364524,16.8190133
 88,"via Giorgio, Via Giorgio Castriota Skanderbeg, 33, 70132 Bari BA, Italy",41.1375296,16.8432517
 89,"Str. S. Girolamo, 70132 Bari BA, Italy",41.1364524,16.8190133
@@ -96,11 +96,11 @@ numero_plesso,formatted_address,lat,lng
 95,"Via Pietro Verri, 70131 Bari BA, Italy",41.0705837,16.8718155
 96,"Via Ospedale di Venere, Bari BA, Italy",41.0764612,16.8647487
 97,"Via Nicola Colonna, 70125 Bari BA, Italy",41.0780483,16.8717803
-98,Italy,41.87194,12.56738
+98,"Via S. Gaspare del Bufalo, 1, 70100 Bari BA, Italy",41.0680931,16.8646567
 99,"Via del Monastero, 11, 70129 Bari BA, Italy",41.0679974,16.8591638
-100,"Via Domenico Amati, 72013 Ceglie Messapica BR, Italy",40.6418255,17.5129872
-101,"Via Domenico Amati, 72013 Ceglie Messapica BR, Italy",40.6418255,17.5129872
-102,"Via Antonio Quaranta, 70021 Acquaviva delle Fonti BA, Italy",40.8988727,16.8435909
+100,"Bari, Metropolitan City of Bari, Italy",41.1171432,16.8718715
+101,"Bari, Metropolitan City of Bari, Italy",41.1171432,16.8718715
+102,"Via Antonio Quaranta, 108, 70131 Bari BA, Italy",41.069981,16.8812698
 103,"Via Valenzano, 70129 Bari BA, Italy",41.0412082,16.8497599
 104,"Via Valenzano, 70129 Bari BA, Italy",41.0412082,16.8497599
 105,"Via Monte Sabotino, 70128 Bari BA, Italy",41.1561972,16.7651947
