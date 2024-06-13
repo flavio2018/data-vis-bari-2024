@@ -9,11 +9,12 @@ import seaborn as sns
 
 
 def add_plesso_to_df(df_voti_liste_comunali_sezioni, sezioni_to_plesso):
-	df_voti_liste_comunali_sezioni['PLESSO'] = df_voti_liste_comunali_sezioni['SEZIONE'].apply(lambda sez: sezioni_to_plesso[sez])
+	df_voti_liste_comunali_sezioni['PLESSO'] = df_voti_liste_comunali_sezioni.iloc[:-2]['SEZIONE'].apply(lambda sez: sezioni_to_plesso[sez])
 	return df_voti_liste_comunali_sezioni
 
 
-def get_sezioni_to_plesso(df_sedi_seggio):
+def get_sezioni_to_plesso():
+	df_sedi_seggio = pd.read_csv('./data/sedi_seggio.csv')
 	sezioni_to_plesso = {}
 
 	for plesso in df_sedi_seggio.iterrows():
@@ -45,22 +46,21 @@ def plot_hexmap_party(df, party_name):
 	st.plotly_chart(fig, theme=None)
 
 
-def reg_plot_parties(df_voti_perc, party1, party2):
+def reg_plot_parties(df_voti, party1, party2):
 	fig, ax = plt.subplots(1, 1, figsize=(7, 6))
-	ax = sns.regplot(data=df_voti_perc, x=party1, y=party2, ax=ax)
+	ax = sns.regplot(data=df_voti.iloc[:-1], x=party1, y=party2, ax=ax)
 	st.pyplot(fig)
+
+
+def make_joined_df(df_voti):
+	sezioni_to_plesso = get_sezioni_to_plesso()
+	df_voti = add_plesso_to_df(df_voti, sezioni_to_plesso)
+	df_sedi_seggio_geocoded = pd.read_csv('./data/sedi_seggio_geocoded.csv')
+	df_voti_joined = df_voti.join(df_sedi_seggio_geocoded.set_index('numero_plesso'), 'PLESSO')
+	return df_voti_joined
     
 
 # px.set_mapbox_access_token(open("../.mapbox_token").read())
-
-df_sedi_seggio = pd.read_csv('./data/sedi_seggio.csv')
-df_sedi_seggio_geocoded = pd.read_csv('./data/sedi_seggio_geocoded.csv')
-df_voti_liste_comunali_sezioni = pd.read_csv('./data/voti_liste_coalizioni_sezioni_perc.csv')
-
-sezioni_to_plesso = get_sezioni_to_plesso(df_sedi_seggio)
-df_voti_liste_comunali_sezioni = add_plesso_to_df(df_voti_liste_comunali_sezioni, sezioni_to_plesso)
-
-df_voti_joined = df_voti_liste_comunali_sezioni.join(df_sedi_seggio_geocoded.set_index('numero_plesso'), 'PLESSO')
 
 partiti_o_coalizioni = ['SCIACOVELLI SINDACO - CI PIACE!',
        'NOI PER BARI - ITALEXIT PER L\'ITALIA PER SCIACOVELLI SINDACO',
@@ -81,13 +81,26 @@ tab1, tab2 = st.tabs(["Voti sul territorio", "Similarità tra liste"])
 
 with tab1:
 	st.title("Elezioni comunali Bari 2024")
-	st.header("Dove le diverse liste hanno preso più voti?")
-	st.write("Esplora la distribuzione dei voti di singoli partiti o coalizioni sul territorio. "
-			 "Ogni esagono corrisponde a un seggio elettorale. I valori sono percentuali sul totale dei voti nel seggio.")
+	st.header("Dove le liste hanno preso più voti?")
+	st.write("Esplora la distribuzione dei voti di singole liste o coalizioni sul territorio. "
+			 "Ogni esagono corrisponde a uno più seggi elettorali vicini. "
+			 "Il numero assoluto di voti nei seggi può essere normalizzato sul totale nel seggio o sul totale dei voti presi dalla lista.")
 
-	party_name = st.selectbox(
+	left_column, right_column = st.columns([3, 2])
+	normalizza_su = right_column.selectbox('Normalizza su', ['Totale sezione', 'Totale lista'])
+
+	party_name = left_column.selectbox(
 	    'Scegli un partito o coalizione',
 	     partiti_o_coalizioni)
+
+	if normalizza_su == 'Voti assoluti':
+		df_voti = pd.read_csv('./data/voti_liste_coalizioni_sezioni.csv')
+	elif normalizza_su == 'Totale sezione':
+		df_voti = pd.read_csv('./data/voti_liste_coalizioni_sezioni_norm_sezioni.csv')
+	elif normalizza_su == 'Totale lista':
+		df_voti = pd.read_csv('./data/voti_liste_coalizioni_sezioni_norm_liste.csv')
+	
+	df_voti_joined = make_joined_df(df_voti)
 
 	plot_hexmap_party(df_voti_joined, party_name)
 
@@ -95,9 +108,9 @@ with tab1:
 with tab2:
 	st.title("Elezioni comunali Bari 2024")
 	st.header("Quanto è simile l'elettorato delle diverse liste?")
-	st.write("Ogni punto nel grafico è un seggio e i valori sugli assi sono le percentuali di voti prese da ciascuna lista in quel seggio. "
-			 "Il grafico mette a confronto le percentuali di voti prese da due liste su tutti i seggi della città. "
-			 "Prova a confrontare, ad esempio, le liste *Laforgia Sindaco* e *Decaro per Bari*.")
+	st.write("Ogni punto nel grafico è un seggio e i valori rappresentano i voti presi da una lista in quel seggio in numero assoluto. "
+			 "Il grafico mette a confronto i voti presi da due liste in tutti i seggi della città. "
+			 "Prova a confrontare, ad esempio, le liste *Bari Bene Comune* e *Europa Verde - Verdi*.")
 
 	party_1 = st.selectbox(
 	    'Scegli la prima lista',
@@ -111,4 +124,7 @@ with tab2:
 	    key=2
 	)
 
-	reg_plot_parties(df_voti_joined, party_1, party_2)
+	df_voti = pd.read_csv('./data/voti_liste_coalizioni_sezioni.csv')
+	df_voti_joined = make_joined_df(df_voti)
+	
+	reg_plot_parties(df_voti, party_1, party_2)
